@@ -6,6 +6,7 @@ let signInBtn = document.getElementById("signInBtn");
 let welcomeUserName = document.getElementById("welcomeUserName");
 let logoutBtn = document.getElementById("logoutBtn");
 let emailToast = document.getElementById("emailToast");
+let togglePassword = document.getElementById("togglePassword");
 let allUsers = [];
 let localStorageKey = "allUsers";
 
@@ -105,3 +106,12 @@ function validateInputs(element) {
   }
   return isValid;
 }
+
+
+
+togglePassword.addEventListener("click", function () {
+  let isPassword = userPassword.type === "password";
+  userPassword.type = isPassword ? "text" : "password";
+  this.classList.toggle("fa-eye");
+  this.classList.toggle("fa-eye-slash");
+});

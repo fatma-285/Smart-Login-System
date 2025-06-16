@@ -12,20 +12,24 @@
 
 <body class="py-5">
     <div class="container  my-5">
-        <div class="form-layout w-75 m-auto shadow p-3 d-flex flex-column">
-            <h1 class="text-primary text-center">Smart Login System</h1>
-            <div class="form-floating mb-3">
-                <input type="email" id="userEmail" class="form-control" placeholder="Enter Your Email">
-                <span class="text-danger d-none">Email not found, please sign up</span>
-                <label for="userEmail ">Email</label>
+        <div class="row">
+            <div class="form-layout col-12 col-lg-8 col-xl-6 m-auto shadow p-3 d-flex flex-column gap-3">
+                <h1 class="text-primary text-center">Log In</h1>
+                <div class="form-floating mb-3">
+                    <input type="email" id="userEmail" class="form-control" placeholder="Enter Your Email">
+                    <span class="text-danger d-none">Email not found, please sign up</span>
+                    <label for="userEmail ">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" id="userPassword" class="form-control" placeholder="">
+                    <i class="fa-solid fa-eye position-absolute top-50 end-0 translate-middle-y me-3 text-primary"
+                        id="togglePassword" style="cursor:pointer;"></i>
+                    <span class="text-danger d-none">Incorrect Password</span>
+                    <label for="userPassword ">Password</label>
+                </div>
+                <button class="btn btn-outline-primary w-75 align-self-center" id="signInBtn">sign In</button>
+                <p class="text-center">Don`t have account <a href="signup.html">SignUp </a></p>
             </div>
-            <div class="form-floating mb-3">
-                <input type="password" id="userPassword" class="form-control" placeholder="">
-                <span class="text-danger d-none">Incorrect Password</span>
-                <label for="userPassword ">Password</label>
-            </div>
-            <button class="btn btn-outline-primary w-75 align-self-center" id="signInBtn">sign In</button>
-            <p class="text-center">Don`t have account <a href="signup.html">SignUp </a></p>
         </div>
     </div>
     <script src="./Js/index.js"></script>

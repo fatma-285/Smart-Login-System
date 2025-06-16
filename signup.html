@@ -12,7 +12,8 @@
 
 <body class="py-5">
     <div class="container my-5">
-        <div class="form-layout w-75 m-auto shadow p-3 d-flex flex-column">
+        <div class="row">
+        <div class="form-layout col-12 col-lg-8 col-xl-6 m-auto shadow p-3 d-flex flex-column gap-3">
             <div class="toast align-items-center d-none mx-auto" id="emailToast" role="alert" aria-live="assertive"
                 aria-atomic="true" data-bs-autohide="true" data-bs-delay="5000">
                 <div class="d-flex">
@@ -23,7 +24,7 @@
                         aria-label="Close"></button>
                 </div>
             </div>
-            <h1 class="text-primary text-center">Smart Login System</h1>
+            <h1 class="text-primary text-center">Sign Up</h1>
             <div class="form-floating mb-3">
                 <input type="text" onchange="validateInputs(this)" id="userName" class="form-control"
                     placeholder="Enter Your Name">
@@ -40,14 +41,18 @@
             <div class="form-floating mb-3">
                 <input type="password" onchange="validateInputs(this)" id="userPassword" class="form-control"
                     placeholder="">
+                    <i class="fa-solid fa-eye position-absolute top-50 end-0 translate-middle-y me-3 text-primary" id="togglePassword"
+                        style="cursor:pointer;"></i>
                 <span class="text-danger d-none">Minimum eight characters, at least one lower case English letter, one
                     number and one
                     special character</span>
                 <label for="userPassword ">Password</label>
+
             </div>
             <button class="btn btn-outline-primary w-75 align-self-center" id="signUpBtn">Sign Up</button>
             <p class="text-center">Already have account <a href="index.html">Log In </a></p>
         </div>
+    </div>
     </div>
     <script src="./Js/index.js"></script>
     <script src="./Js/bootstrap.bundle.min.js"></script>
