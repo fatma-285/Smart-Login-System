@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="py-5">
+    <div class="container my-5">
+        <div class="form-layout w-75 m-auto shadow p-3 d-flex flex-column">
+            <div class="toast align-items-center d-none mx-auto" id="emailToast" role="alert" aria-live="assertive"
+                aria-atomic="true" data-bs-autohide="true" data-bs-delay="5000">
+                <div class="d-flex">
+                    <div class="toast-body text-danger fw-medium">
+                        Email is already existed before!
+                    </div>
+                    <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"
+                        aria-label="Close"></button>
+                </div>
+            </div>
+            <h1 class="text-primary text-center">Smart Login System</h1>
+            <div class="form-floating mb-3">
+                <input type="text" onchange="validateInputs(this)" id="userName" class="form-control"
+                    placeholder="Enter Your Name">
+                <span class="text-danger d-none">Name must start with capital character and less than 14
+                    characters</span>
+                <label for="productName ">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" onchange="validateInputs(this)" id="userEmail" class="form-control"
+                    placeholder="Enter Your Email">
+                <span class="text-danger d-none">Inavalid Email</span>
+                <label for="userEmail ">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" onchange="validateInputs(this)" id="userPassword" class="form-control"
+                    placeholder="">
+                <span class="text-danger d-none">Minimum eight characters, at least one lower case English letter, one
+                    number and one
+                    special character</span>
+                <label for="userPassword ">Password</label>
+            </div>
+            <button class="btn btn-outline-primary w-75 align-self-center" id="signUpBtn">Sign Up</button>
+            <p class="text-center">Already have account <a href="\index.html">Log In </a></p>
+        </div>
+    </div>
+    <script src="./Js/index.js"></script>
+    <script src="./Js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
