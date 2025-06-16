@@ -34,7 +34,7 @@ if (signUpBtn) {
         allUsers.push(user);
         addToLocalStorage();
         clearForm();
-        location.href = "/index.html";
+        location.href = "index.html";
         console.log(allUsers);
       }
     }
