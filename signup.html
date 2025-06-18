@@ -10,47 +10,54 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body class="py-5">
-    <div class="container my-5">
-        <div class="row">
-        <div class="form-layout col-12 col-lg-8 col-xl-6 m-auto shadow p-3 d-flex flex-column gap-3">
-            <div class="toast align-items-center d-none mx-auto" id="emailToast" role="alert" aria-live="assertive"
-                aria-atomic="true" data-bs-autohide="true" data-bs-delay="5000">
-                <div class="d-flex">
-                    <div class="toast-body text-danger fw-medium">
-                        Email is already existed before!
+<body class="overflow-hidden">
+    <div class="row vh-100 d-flex">
+        <div class="col-12 col-md-6 align-self-center px-2 px-lg-5">
+            <div class="form-layout  m-auto bg-white rounded-3 shadow p-5 d-flex flex-column gap-3">
+                <div class="toast align-items-center d-none mx-auto" id="emailToast" role="alert" aria-live="assertive"
+                    aria-atomic="true" data-bs-autohide="true" data-bs-delay="5000">
+                    <div class="d-flex">
+                        <div class="toast-body text-danger fw-medium">
+                            Email is already existed before!
+                        </div>
+                        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"
+                            aria-label="Close"></button>
                     </div>
-                    <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"
-                        aria-label="Close"></button>
                 </div>
-            </div>
-            <h1 class="text-primary text-center">Sign Up</h1>
-            <div class="form-floating mb-3">
-                <input type="text" onchange="validateInputs(this)" id="userName" class="form-control"
-                    placeholder="Enter Your Name">
-                <span class="text-danger d-none">Name must start with capital character and less than 14
-                    characters</span>
-                <label for="productName ">Name</label>
-            </div>
-            <div class="form-floating mb-3">
-                <input type="email" onchange="validateInputs(this)" id="userEmail" class="form-control"
-                    placeholder="Enter Your Email">
-                <span class="text-danger d-none">Inavalid Email</span>
-                <label for="userEmail ">Email</label>
-            </div>
-            <div class="form-floating mb-3">
-                <input type="password" onchange="validateInputs(this)" id="userPassword" class="form-control"
-                    placeholder="">
-                    <i class="fa-solid fa-eye position-absolute top-50 end-0 translate-middle-y me-3 text-primary" id="togglePassword"
-                        style="cursor:pointer;"></i>
-                <span class="text-danger d-none">Minimum eight characters, at least one lower case English letter, one
-                    number and one
-                    special character</span>
-                <label for="userPassword ">Password</label>
+                <h1 class="text-center m-color">Sign Up</h1>
+                <p class="d-md-none fw-bold m-color">Get Started!👌🏻</p>
+                <div class="form-floating mb-3">
+                    <input type="text" onchange="validateInputs(this)" id="userName" class="form-control"
+                        placeholder="Enter Your Name">
+                    <span class="text-danger d-none">Name must start with capital character and less than 14
+                        characters</span>
+                    <label for="productName ">Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" onchange="validateInputs(this)" id="userEmail" class="form-control"
+                        placeholder="Enter Your Email">
+                    <span class="text-danger d-none">Inavalid Email</span>
+                    <label for="userEmail ">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" onchange="validateInputs(this)" id="userPassword" class="form-control"
+                        placeholder="">
+                    <i class="fa-solid fa-eye position-absolute top-50 end-0 translate-middle-y me-3 m-color"
+                        id="togglePassword" style="cursor:pointer;"></i>
+                    <span class="text-danger d-none">Minimum eight characters, at least one lower case English letter,
+                        one
+                        number and one
+                        special character</span>
+                    <label for="userPassword ">Password</label>
 
+                </div>
+                <button class="btn text-white w-75 align-self-center m-bg-color" id="signUpBtn">Sign Up</button>
+                <p class="text-center">Already have account <a href="index.html" class="m-color">Log In </a></p>
             </div>
-            <button class="btn btn-outline-primary w-75 align-self-center" id="signUpBtn">Sign Up</button>
-            <p class="text-center">Already have account <a href="index.html">Log In </a></p>
+        </div>
+        <div class="side-img col-md-6 d-none d-md-block d-flex align-content-center d-inline text-center rounded-start-5">
+            <p class="p-4 h1 text-white fw-bold">Get Started!
+            </p>
         </div>
     </div>
     </div>
